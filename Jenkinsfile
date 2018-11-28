@@ -26,7 +26,7 @@ pipeline {
                 sh 'make check || true' 
                 junit '**/target/*.xml' 
             }
-      }
+      
    
     }
 }
