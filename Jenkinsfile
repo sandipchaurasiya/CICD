@@ -18,7 +18,7 @@ pipeline {
             }
         }
         
-        stage('Build') {
+        stage('Build1') {
             steps {
                 sh 'make' 
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
