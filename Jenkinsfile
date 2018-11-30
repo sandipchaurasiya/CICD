@@ -16,14 +16,7 @@ pipeline {
                 dir("/home/redhat/aapgit/recipes") {
                 sh 'mvn -Dmaven.test.failure.ignore=true -U clean install'
                 }
-                
-                 stage ('Deploy') {
-            steps {
-                dir("/home/redhat/aapgit/recipes/target") {
-                sh 'mvn spring-boot:run'
-                }
-            }
-                
+               
             }
         }
        
