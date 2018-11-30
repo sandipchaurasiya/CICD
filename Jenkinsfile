@@ -13,7 +13,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                echo "hello jenkins"
+                sh 'mvn -Dmaven.test.failure.ignore=true -U clean install'
             }
         }
        
