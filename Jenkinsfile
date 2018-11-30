@@ -22,7 +22,7 @@ pipeline {
        
  stage ('Deploy') {
             steps {
-                dir("/home/redhat/aapgit/recipes/target") {
+                dir("/home/redhat/aapgit/recipes") {
                 sh 'mvn spring-boot:run'
                 }
                
