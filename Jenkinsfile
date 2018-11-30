@@ -22,7 +22,7 @@ pipeline {
                 dir("/home/redhat/aapgit/recipes/target") {
                 sh 'mvn spring-boot:run'
                 }
-                
+            }
                 
             }
         }
