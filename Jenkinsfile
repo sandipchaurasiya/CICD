@@ -13,7 +13,9 @@ pipeline {
 
         stage ('Build') {
             steps {
+                dir("/home/redhat/aapgit/recipes") {
                 sh 'mvn -Dmaven.test.failure.ignore=true -U clean install'
+                }
             }
         }
        
