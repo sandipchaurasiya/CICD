@@ -13,7 +13,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                dir("/home/redhat/aapgit/recipes") {
+                dir("/home/sandipchaurasiya/MYLABS/GITLAB/HelloWorld/recipes") {
                 sh 'mvn -Dmaven.test.failure.ignore=true -U clean install'
                 }
                
@@ -22,7 +22,7 @@ pipeline {
        
  stage ('Deploy') {
             steps {
-                dir("/home/redhat/aapgit/recipes") {
+                dir("/home/sandipchaurasiya/MYLABS/GITLAB/HelloWorld/recipes") {
                 sh 'mvn spring-boot:run'
                 }
                
